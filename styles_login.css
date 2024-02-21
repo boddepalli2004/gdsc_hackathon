@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+	.full-page {
+		height: 100%;
+		width: 100%;
+		background: transparent;
+		position: absolute;
+	}
+	.login-page {
+		/* display: none; */
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: rgba(253, 255, 254, 0.8); /* Adjust the alpha value for transparency */
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 20px 9px #ff61241f;
+		z-index: 2;
+	}
+	.overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+
+/* #login-form
+{
+    display: none;
+
+} */
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin: 9% auto;
+	background:rgb(202, 247, 192);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px ;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 75%;
+	padding: 10px 10px;
+	cursor: pointer;
+	display: block;
+	margin: 15px 30px 10px;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+/* Add this to your existing CSS */
+
+.radio-options {
+    display: flex;
+    align-items:center;
+    margin:10px 10px;
+}
+
+.radio-options input[type="radio"] {
+    margin-left: 5px;
+    appearance: none;
+    border: 2px solid #999; /* Border color for the unchecked state */
+    border-radius: 75%; /* Make it round */
+    width: 12px; /* Set the width and height for consistency */
+    height: 12px;
+    outline: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.radio-options input[type="radio"]:checked {
+    background-color:blue; /* Background color for the checked state */
+    border-color: #999; /* Border color for the checked state */
+}
+
+.check-box
+{
+	margin: 30px 10px 10px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:rgb(0, 0, 0);
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:rgb(0, 0, 0);
+	font-size: 15;
+}
